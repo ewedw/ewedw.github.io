@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<p>
+	<a href="{{site.baseurl}}/post">< Return to posts</a>
+	<span style="float:right;text-align: right;">
+		{{ page.date | date: "%e %B %Y" }}
+		<br>
+		{% if page.working %}
+		<span style="color:#FF8970;"><em>[Under construction]</em></span>
+		{% endif %}
+	</span>
+</p>
+
+{{ content }}
