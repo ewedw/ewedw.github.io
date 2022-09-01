@@ -59,7 +59,7 @@ Great post by [Lilian Weng](https://lilianweng.github.io/){:target="_blank"}
 [You and Your Research](https://blog.samaltman.com/you-and-your-research){:target="_blank"} (Mar 1986)
 
 * John Schulman  
-[Problem taste and Research with goals](http://joschu.net/blog/opinionated-guide-ml-research.html){:target="_blank"}
+[Problem taste](http://joschu.net/blog/opinionated-guide-ml-research.html){:target="_blank"}
 
 * Paul Graham   
 [Resourceful](http://paulgraham.com/word.html){:target="_blank"}  
