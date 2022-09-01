@@ -24,6 +24,11 @@ MIT 6.S191
 -- [Youtube playlist](https://youtube.com/playlist?list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv){:target="_blank"} Spring 2017    
 Stanford CS231n 
 
+* [Machine Learning](https://cs229.stanford.edu/){:target="_blank"}  
+-- [Course Note](https://cs229.stanford.edu/lectures-spring2022/main_notes.pdf){:target="_blank"}  
+Stanford CS229
+
+
 ## Deep Generative Models
 
 * [Deep Generative Models](https://deepgenerativemodels.github.io/syllabus.html){:target="_blank"}  
@@ -33,10 +38,6 @@ Stanford CS236
 * [Probabilistic Graphical Models](https://ermongroup.github.io/cs228-notes/){:target="_blank"} <span style="color:#FF8970">*\*recommend\**</span>  
 -- [PGM Book](https://github.com/kushagra06/CS228_PGM/blob/master/Probabilistic%20Graphical%20Models%20-%20Principles%20and%20Techniques.pdf){:target="_blank"}  
 Stanford CS228
-
-* [Machine Learning](https://cs229.stanford.edu/){:target="_blank"}  
--- [Course Note](https://cs229.stanford.edu/lectures-spring2022/main_notes.pdf){:target="_blank"}  
-Stanford CS229
 
 * [Autoencoder to VAE](https://lilianweng.github.io/posts/2018-08-12-vae/){:target="_blank"}  
 Great post by [Lilian Weng](https://lilianweng.github.io/){:target="_blank"}  
