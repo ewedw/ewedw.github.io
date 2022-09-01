@@ -24,7 +24,7 @@ MIT 6.S191
 -- [Youtube playlist](https://youtube.com/playlist?list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv){:target="_blank"} Spring 2017    
 Stanford CS231n 
 
-* [Machine Learning](https://cs229.stanford.edu/){:target="_blank"}  
+* [Statistical Machine Learning](https://cs229.stanford.edu/){:target="_blank"}  
 -- [Course Note](https://cs229.stanford.edu/lectures-spring2022/main_notes.pdf){:target="_blank"}  
 Stanford CS229
 
