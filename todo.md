@@ -6,15 +6,17 @@ permalink: /todo/
 
 ## Possible direction with attacks
 
-* Grayscale to Color
-
 * Style transfer {% include focus.html %}
+
+* Grayscale to Color {% include focus.html %}
 
 * Sketch to Grayscale
 
-* Generative Model (Diffusion-based)
+* Generative Model (Diffusion-based) {% include focus.html %}
 
-* Image inbetweening (NeRF)
+* Image to animation...inbetweening (NeRF)
+
+* Image to animation...generative + style 
 
 ## Further direction
 
