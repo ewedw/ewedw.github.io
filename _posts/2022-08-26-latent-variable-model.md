@@ -338,7 +338,7 @@ $$
 \end{align*}
 $$
 
-To compute the **ELBO**, we can first consider deriving a *closed form expression*. In most cases, there is not a simple one. We can use **Monte Carlo sampling** to appoximate it. The idea is to treat the *expectation* as **uniform sampling**. We can sample $$z_1,\dotsc,z_k \sim q_\phi(z \mid x)$$ and estimate
+To compute the **ELBO**, we can first consider deriving a *closed form expression*. In most cases, there is not a simple one. We can use **Monte Carlo sampling** to appoximate it. The idea is to calculate (approximate) the *expectation* using a large number of samples from a distribution. We can sample $$z_1,\dotsc,z_k \sim q_\phi(z \mid x)$$ and estimate
 
 $$\mathcal{L}_{\theta, \phi}(x) \approx \frac{1}{k} \sum_k \ln p_\theta(x,z_k) - \ln q_\phi(z_k \mid x)$$
 
