@@ -16,8 +16,12 @@ permalink: /todo/
 
 * Image to animation...inbetweening (NeRF)
 
-* Image to animation...generative + style 
+* Image to animation...generative + style
+
+* Video segmentation (Layered Neural Atlases + Inpainting)
 
 ## Further direction
 
 * Image to 3D function
+
+* Function mapping animation
