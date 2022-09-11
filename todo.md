@@ -8,7 +8,7 @@ permalink: /todo/
 
 * Style transfer {% include focus.html %}
 
-* Grayscale to Color {% include focus.html %}
+* Grayscale to Color (Self-supervised) {% include focus.html %}
 
 * Sketch to Grayscale
 
