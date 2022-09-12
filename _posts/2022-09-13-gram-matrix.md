@@ -95,7 +95,7 @@ $$M =
 \vec{b_n} \cdot \vec{b_1} & \cdots & \vec{b_n} \cdot \vec{b_n}
 \end{bmatrix}$$
 
-where element in row $$j$$ and column $$k$$ is
+where element in row $$i$$ and column $$j$$ is
 
 $$M_{ij} = \vec{b_i} \cdot \vec{b_j}$$
 
