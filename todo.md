@@ -6,13 +6,17 @@ permalink: /todo/
 
 ## Study
 
-* PGM / CS228 (Sampling / Inference / Learning...) {% include focus.html %}
+* PGM / CS228 {% include focus.html %}  
+(Sampling / Inference / Learning...) 
 
-* CS231n (Style Transfer / Self-supervised / Attention / Video...) {% include focus.html %}
+* CS231n {% include focus.html %}  
+(Style Transfer / Self-supervised / Attention / Video...) 
 
-* CS236 (VAE / Energy / Score / Diffusion...) {% include focus.html %}
+* CS236 {% include focus.html %}  
+(VAE / Energy / Score / Diffusion...)
 
-* CS229 (Stat foundation...)
+* CS229  
+(Stat foundation...)
 
 ## Possible direction with attacks
 
