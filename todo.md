@@ -36,6 +36,8 @@ permalink: /todo/
 
 ## Further direction
 
+* Content-dependent Style representation {% include focus.html %}
+
 * Image to 3D function
 
 * Function mapping animation
