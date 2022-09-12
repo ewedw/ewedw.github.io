@@ -99,4 +99,4 @@ where element in row $$i$$ and column $$j$$ is
 
 $$M_{ij} = \vec{b_i} \cdot \vec{b_j}$$
 
-Notice the diagonal line always have **dot products** of the particular vector of itself.
+Notice the diagonal line always have **dot products** of the particular vector itself.
