@@ -6,6 +6,8 @@ permalink: /todo/
 
 ## Study
 
+* Linear Algebra {% include focus.html %} 
+
 * PGM / CS228 {% include focus.html %}  
 (Sampling / Inference / Learning...) 
 
