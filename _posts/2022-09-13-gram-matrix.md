@@ -86,7 +86,7 @@ where $$M$$ is the **Gram Matrix**.
 
 ### Gram Matrix
 
-In general, the **Gram Matrix** can take in multiple vectors $$b_1, \dots, b_k$$
+In general, the **Gram Matrix** can take in multiple vectors $$b_1, \dots, b_n$$
 
 $$M = 
 \begin{bmatrix}
