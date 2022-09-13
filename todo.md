@@ -24,6 +24,8 @@ permalink: /todo/
 
 * Style transfer {% include focus.html %}
 
+* Style distribution (Multvariate Gaussian with Gram matrix) {% include focus.html %}
+
 * Grayscale to Color (Self-supervised) {% include focus.html %}
 
 * Sketch to Grayscale
