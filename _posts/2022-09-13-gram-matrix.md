@@ -100,3 +100,11 @@ where element in row $$i$$ and column $$j$$ is
 $$M_{ij} = \vec{b_i} \cdot \vec{b_j}$$
 
 Notice the diagonal line always have **dot products** of the particular vector itself.
+
+### What does it mean?
+
+It represents the correlation between the targeted (basis) vectors. 
+
+When they are all orthogonal to one another, the **Gram matrix** is simply an identity matrix $$I$$.
+
+Suppose we have a set of feature vectors $$F_k$$, and we wanna find another set of feature vectors $$V_k$$ that have the same correlation. We can first find the correlation between the features vectors $$F_k$$ by computing the **Gram matrix** $$M_F$$, then we can compute the **Gram matrix** $$M_V$$ using $$V_k$$ and try to match $$M_V$$ to $$M_K$$.
