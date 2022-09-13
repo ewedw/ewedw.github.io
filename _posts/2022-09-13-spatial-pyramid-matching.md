@@ -25,7 +25,9 @@ Consider we have two 1D feature sets $$y$$ and $$z$$ (you can treat them as feat
 
 	* We seek out matching points that fall into the same bin. Dotted lines imply new matching points and bold lines imply previously-identified matching points in the finer bins.
 
-* In (b), we display the above finer to coarser bins (without matching) using horizontal histograms, denote as $$H_i(y)$$ and $$H_i(z)$$. We may not need to stop at $$i=2$$ as shown in the above image. We can denote the set of histograms from finer bins to coarser bins for a particular feature $$X$$ as
+* In (b), we display the above finer to coarser bins (without matching) using horizontal histograms, denote as $$H_i(y)$$ and $$H_i(z)$$. 
+
+* We may not need to stop at $$i=2$$ as shown in the above image. We can denote the set of histograms from finer bins to coarser bins for a particular feature $$X$$ as
 
 $$\Psi (X) = \{ H_0(X), \dots, H_i(X) \}$$
 
