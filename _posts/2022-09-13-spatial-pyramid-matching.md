@@ -33,7 +33,7 @@ $$\Psi (X) = \{ H_0(X), \dots, H_i(X) \}$$
 
 * In (c), we display the *intersection* found in (b) using 
 
-$$I_i = \min (H_i(y), H_i(z))$$
+$$I_i = I_i (H_i(y), H_i(z)) = \min (H_i(y), H_i(z))$$
 
 * In (d), we find the new matching points in current bin $$N_i$$ by subtracting from the previous layers (where $$I_{-1} = 0$$)
 
