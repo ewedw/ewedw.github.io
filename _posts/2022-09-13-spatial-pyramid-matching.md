@@ -9,7 +9,7 @@ working: true
 
 # Spatial Pyramid Matching 
 
-We will start from the basic idea in [**Pyramid Matching Kernel**](https://www.jmlr.org/papers/volume8/grauman07a/grauman07a.pdf){:target="_blank"}, and then build it into a spatial one.
+We will start from the basic idea in [**Pyramid Matching Kernel**](https://www.jmlr.org/papers/volume8/grauman07a/grauman07a.pdf){:target="_blank"}.
 
 ### Pyramid Matching Kernel
 
@@ -52,11 +52,11 @@ $$
 \end{align*}
 $$
 
-* We then sum over all $$N_i$$ with weights $$w_i$$ to find the **pyramid match** $$P_\Delta$$,
+* The (unnormalzied) **pyramid match** $$P_\Delta$$ is defined as the sum over all $$N_i$$ with weights $$w_i$$ to find ,
 
 $$P_\Delta = \sum_i w_i N_i$$
 
-* If we expand the **pyramid match** $$P_\Delta$$, we have
+* If we expand $$P_\Delta$$, we have
 
 $$P_\Delta = \sum_{i=0}^{L-1} w_i ( \min (H_i(y), H_i(z)) - \min (H_{i-1}(y), H_{i-1}(z)) )$$
 
@@ -74,4 +74,9 @@ $$r_i= \left( \frac{D}{2^i} \right)^d$$
 
 ### Spatial Pyramid Matching
 
-After understanding the basic idea of [**Pyramid Matching Kernel**](https://www.jmlr.org/papers/volume8/grauman07a/grauman07a.pdf){:target="_blank"}, we can move on to [**Spatial Pyramid Matching**](https://inc.ucsd.edu/mplab/users/marni/Igert/Lazebnik_06.pdf){:target="_blank"}. 
+#TODO Image idea
+
+### Optimal Partial Matching
+
+### Classification and Regression with the Pyramid Match
+
