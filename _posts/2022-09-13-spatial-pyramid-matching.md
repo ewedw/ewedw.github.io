@@ -64,11 +64,11 @@ where $$L-1 = \lceil \log_2 D \rceil$$ and $$D$$ is the diameter.
 
 ### Where comes the diameter $$D$$?
 
-In the above example, we are considering some 1-dimensional vectors. 
+In the above example, we are considering some 1-dimensional vectors and $$D$$ is actually the maximal distance between the value of elements in $$y$$ and $$z$$ (you can view it as "range").
 
 If we have some $$d$$-dimensional vectors in feature space $$\mathcal{F}$$, the value of the element in vectors in $$\mathcal{F}$$ has a maximal range $$D$$. We can view the vectors bounded by a $$d$$-dimensional sphere with *diameter* $$D$$.
 
-Thus, the kernel "bins" happens in a spherical ways, with radius $$r_i$$ as
+Thus, the kernel "bins" happens in a spherical ways, and $$H_i(X)$$ has dimension $$r_i$$ as
 
 $$r_i= \left( \frac{D}{2^i} \right)^d$$
 
