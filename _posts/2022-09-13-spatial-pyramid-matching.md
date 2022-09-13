@@ -67,3 +67,7 @@ If we have some $$d$$-dimensional vectors in feature space $$\mathcal{F}$$, the 
 Thus, the kernel "bins" happens in a spherical ways, with radius $$r_i$$ as
 
 $$r_i= \left( \frac{D}{2^i} \right)^d$$
+
+### Spatial Pyramid Matching
+
+After understanding the basic idea of [**Pyramid Matching Kernel**](https://www.jmlr.org/papers/volume8/grauman07a/grauman07a.pdf){:target="_blank"}, we can move on to [**Spatial Pyramid Matching**](https://inc.ucsd.edu/mplab/users/marni/Igert/Lazebnik_06.pdf){:target="_blank"}. 
