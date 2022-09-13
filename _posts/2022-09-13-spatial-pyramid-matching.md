@@ -64,7 +64,7 @@ where $$L-1 = \lceil \log_2 D \rceil$$ and $$D$$ is the diameter.
 
 ### Where comes the diameter $$D$$?
 
-In the above example, we are considering some 1-dimensional vectors and $$D$$ is actually the maximal distance between the value of elements in $$y$$ and $$z$$ (you can view it as "range").
+In the above example, we are considering some 1-dimensional vectors and $$D$$ is actually the maximal distance between the value of elements in $$y$$ and $$z$$. In the above image, it is the distance between the upper-most blue dots in $$y$$ and the lower-most red triangles in $$z$$).
 
 If we have some $$d$$-dimensional vectors in feature space $$\mathcal{F}$$, the value of the element in vectors in $$\mathcal{F}$$ has a maximal range $$D$$. We can view the vectors bounded by a $$d$$-dimensional sphere with *diameter* $$D$$.
 
