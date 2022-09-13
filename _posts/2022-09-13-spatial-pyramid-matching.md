@@ -35,7 +35,7 @@ $$I_i = \min (H_i(y), H_i(z))$$
 
 $$N_i = I_i - I_{i-1}$$ 
 
-* We then sum over all $$N_i$$ with weights $$w_i$$ inversely proportional to the "bin width" to find the pyramid match $$P_\Delta$$,
+* We then sum over all $$N_i$$ with weights $$w_i$$ inversely proportional to the "bin width" to find the **pyramid match** $$P_\Delta$$,
 
 $$
 \begin{align*}
