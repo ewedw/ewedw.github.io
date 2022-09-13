@@ -104,7 +104,7 @@ M_{ij} &= \vec{b_i} \cdot \vec{b_j} \\
 \end{align*}
 $$
 
-where $$b_{ik}$$ represents the $$k$$th element in $$\vec{b_i}$$.
+where $$b_{ik}$$ represents the $$k$$ th element in $$\vec{b_i}$$.
 
 Notice the diagonal line always have **dot products** of the particular vector itself.
 
