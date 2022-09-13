@@ -122,4 +122,4 @@ Suppose we have a set of feature vectors $$\mathcal{F}$$, and we wanna find anot
 
 1.	Try to match $$M(\mathcal{G}_\theta)$$ to $$M(\mathcal{F})$$
 
-$$\mid M(\mathcal{G}_\theta) - M(\mathcal{F}) \mid ^2_2 = 0$$
+$$\parallel M(\mathcal{G}_\theta) - M(\mathcal{F}) \parallel ^2_2 = 0$$
