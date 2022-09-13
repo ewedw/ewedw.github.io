@@ -113,4 +113,4 @@ Suppose we have a set of feature vectors $$\mathcal{F}$$, and we wanna find anot
 
 1.	Compute the **Gram matrix** $$M(\mathcal{E})$$ using $$\mathcal{E}$$
 
-1.	Try to match $$M(\mathcalE)$$ to $$M(\mathcal{F})$$
+1.	Try to match $$M(\mathcal{E})$$ to $$M(\mathcal{F})$$
