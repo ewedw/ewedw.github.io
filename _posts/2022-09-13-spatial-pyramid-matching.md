@@ -44,6 +44,7 @@ $$N_i = I_i - I_{i-1}$$
 $$w_i = \frac{1}{2^i}$$
 
 * The set of weights $$\mathcal{W}$$ as
+
 $$
 \begin{align*}
 \mathcal{W} &= \{ 1, \frac12, \frac14, \dots \} \\
