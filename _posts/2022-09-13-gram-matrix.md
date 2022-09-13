@@ -97,7 +97,14 @@ $$M =
 
 where element in row $$i$$ and column $$j$$ is
 
-$$M_{ij} = \vec{b_i} \cdot \vec{b_j}$$
+$$
+\begin{align*}
+M_{ij} &= \vec{b_i} \cdot \vec{b_j} \\
+&= \sum_k b_{ik} b_{jk} \\
+\end{align*}
+$$
+
+where $$b_{ik}$$ represents the $$k$$th element in $$\vec{b_i}$$.
 
 Notice the diagonal line always have **dot products** of the particular vector itself.
 
