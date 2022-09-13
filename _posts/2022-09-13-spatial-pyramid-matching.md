@@ -39,17 +39,20 @@ $$I_i = I_i (H_i(y), H_i(z)) = \min (H_i(y), H_i(z))$$
 
 $$N_i = I_i - I_{i-1}$$ 
 
-* We then sum over all $$N_i$$ with weights $$w_i$$ inversely proportional to the "bin width" (actually called the **side length** in the paper) to find the **pyramid match** $$P_\Delta$$,
+* Since we are dividing the vectors into bins, we want to have a "bin weight" $$w_i$$ to describe the "matching power" (how strong the correlation is for the matching). $$w_i$$ is *inversely proportional* to the "width of the bin", or called the **side length** in the paper. We normally choose **side length** as the power of $$2$$, i.e. $$2^i$$
 
 $$
 \begin{align*}
 w_i &= \{ 1, \frac12, \frac14, \dots \} \\
 &= \{ \frac{1}{2^0}, \frac{1}{2^1}, \frac{1}{2^2}, \dots \} \\
-P_\Delta &= \sum_i w_i N_i
 \end{align*}
 $$
 
-* If we expand the **pyramid match kernel**, we have
+* We then sum over all $$N_i$$ with weights $$w_i$$ to find the **pyramid match** $$P_\Delta$$,
+
+$$P_\Delta &= \sum_i w_i N_i$$
+
+* If we expand the **pyramid match**, we have
 
 $$P_\Delta = \sum_{i=0}^{L-1} w_i ( \min (H_i(y), H_i(z)) - \min (H_{i-1}(y), H_{i-1}(z)) )$$
 
