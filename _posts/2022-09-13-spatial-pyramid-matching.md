@@ -39,7 +39,7 @@ $$I_i = I_i (H_i(y), H_i(z)) = \min (H_i(y), H_i(z))$$
 
 $$N_i = I_i - I_{i-1}$$ 
 
-* We then sum over all $$N_i$$ with weights $$w_i$$ inversely proportional to the "bin width" to find the **pyramid match** $$P_\Delta$$,
+* We then sum over all $$N_i$$ with weights $$w_i$$ inversely proportional to the "bin width" (actually called the **side length**) to find the **pyramid match** $$P_\Delta$$,
 
 $$
 \begin{align*}
@@ -48,3 +48,16 @@ P_\Delta &= \sum_i w_i N_i
 \end{align*}
 $$
 
+* If we expand the **pyramid match kernel**, we have
+
+$$P_\Delta = \sum_{i=0}^{L-1} w_i ( \min (H_i(y), H_i(z)) - \min (H_{i-1}(y), H_{i-1}(z)) )$$
+
+where $$L-1 = \lceil \log_2 D \rceil$$ and $$D$$ is the diameter.
+
+### Why do we have the diameter $$D$$?
+
+In the above example, we are considering some 1D vectors. If we have some $$d$$-dimensional vectors in feature space $$\mathcal{F}$$, the value of the element in vectors in $$\mathcal{F}$$ has a maximal range $$D$$. We can treat $$D$$ as the *diameter* of a $$d$$-dimensinal sphere.
+
+Thus, the kernel "bins" happens in a spherical ways, with radius $$r_i$$ as
+
+$$r_i= \left( \frac{D}{2^i} \right)^d$$
