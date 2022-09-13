@@ -25,6 +25,16 @@ Consider we have two 1D feature sets $$y$$ an $$z$$ (you can treat them as featu
 
 $$I_i = \min (H_i(y), H_i(z))$$
 
-* In (d), we find the new matching points in current bin $$N_i$$ by subtracting from the previous layers
+* In (d), we find the new matching points in current bin $$N_i$$ by subtracting from the previous layers (where $$I_{-1} = 0$$)
 
 $$N_i = I_i - I_{i-1}$$ 
+
+* We then sum over all $$N_i$$ with weights $$w_i$$ inversely proportional to the "bin width" to find the pyramid match $$P_\Delta$$,
+
+$$
+\begin{align*}
+w_i = \{ 1, \frac12, \frac14, \dots \} \\
+P_\Delta &= \sum_i w_i N_i
+\end{align*}
+$$
+
