@@ -21,11 +21,11 @@ Consider we have two 1D feature sets $$y$$ an $$z$$ (you can treat them as featu
 
 	* We first distribute and align the two 1D feature sets vertically. 
 
-	* Then we divide the space into some number of histogram bins, from finer bins (upper-most image) to coarse bins (lower-most image). 
+	* Then we divide the space into some number of histogram bins, from finer bins (upper-most image) to coarser bins (lower-most image). 
 
 	* We seek out matching points that fall into the same bin. Dotted lines imply new matching points and bold lines imply previously-identified matching points in the finer bins.
 
-* In (b), we display the above finer to coarse bins (without matching) using horizontal historgrams by $$H_i(y)$$ and $$H_i(z)$$.
+* In (b), we display the above finer to coarser bins (without matching) using horizontal historgrams by $$H_i(y)$$ and $$H_i(z)$$.
 
 * In (c), we display the intersection found in (b) using 
 
