@@ -41,9 +41,12 @@ $$N_i = I_i - I_{i-1}$$
 
 * Since we are dividing the vectors into bins, we want to have a "bin weight" $$w_i$$ to describe the "matching power" (how strong the correlation is for the matching). $$w_i$$ is *inversely proportional* to the "width of the bin", or called the **side length** in the paper. We normally choose **side length** as the power of $$2$$, i.e. $$2^i$$
 
+$$w_i = \frac{1}{2^i}$$
+
+* The set of weights $$\mathcal{W}$$ as
 $$
 \begin{align*}
-w_i &= \{ 1, \frac12, \frac14, \dots \} \\
+\mathcal{W} &= \{ 1, \frac12, \frac14, \dots \} \\
 &= \{ \frac{1}{2^0}, \frac{1}{2^1}, \frac{1}{2^2}, \dots \} \\
 \end{align*}
 $$
