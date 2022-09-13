@@ -52,7 +52,7 @@ $$
 
 $$P_\Delta = \sum_i w_i N_i$$
 
-* If we expand the **pyramid match**, we have
+* If we expand the **pyramid match** $$P_\Delta$$, we have
 
 $$P_\Delta = \sum_{i=0}^{L-1} w_i ( \min (H_i(y), H_i(z)) - \min (H_{i-1}(y), H_{i-1}(z)) )$$
 
