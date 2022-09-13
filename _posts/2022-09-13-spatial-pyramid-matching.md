@@ -13,7 +13,7 @@ We will start from the basic idea in [**Pyramid Matching Kernel**](https://www.j
 
 ### Pyramid Matching Kernel
 
-Consider we have two 1D feature sets $$y$$ an $$z$$ (you can treat them as feature vectors), 
+Consider we have two 1D feature sets $$y$$ and $$z$$ (you can treat them as feature vectors), 
 
 ![pyramid_mathcing_kernel](\assets\img\pyramid_matching_kernel.png "pyramid matching kernel")
 
@@ -25,7 +25,9 @@ Consider we have two 1D feature sets $$y$$ an $$z$$ (you can treat them as featu
 
 	* We seek out matching points that fall into the same bin. Dotted lines imply new matching points and bold lines imply previously-identified matching points in the finer bins.
 
-* In (b), we display the above finer to coarser bins (without matching) using horizontal histograms, denote as $$H_i(y)$$ and $$H_i(z)$$.
+* In (b), we display the above finer to coarser bins (without matching) using horizontal histograms, denote as $$H_i(y)$$ and $$H_i(z)$$. We may not need to stop at $$i=2$$ as shown in the above image. We can denote the set of histograms from finer bins to coarser bins for a particular feature $$X$$ as
+
+$$\Psi (X) = \{ H_0(X), \dots, H_i(X) \}$$
 
 * In (c), we display the *intersection* found in (b) using 
 
