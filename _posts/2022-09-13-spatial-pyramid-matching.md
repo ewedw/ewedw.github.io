@@ -50,7 +50,7 @@ $$
 
 * We then sum over all $$N_i$$ with weights $$w_i$$ to find the **pyramid match** $$P_\Delta$$,
 
-$$P_\Delta &= \sum_i w_i N_i$$
+$$P_\Delta = \sum_i w_i N_i$$
 
 * If we expand the **pyramid match**, we have
 
