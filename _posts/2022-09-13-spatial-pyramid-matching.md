@@ -39,7 +39,7 @@ $$N_i = I_i - I_{i-1}$$
 
 $$
 \begin{align*}
-w_i = \{ 1, \frac12, \frac14, \dots \} \\
+w_i &= \{ 1, \frac12, \frac14, \dots \} \\
 P_\Delta &= \sum_i w_i N_i
 \end{align*}
 $$
