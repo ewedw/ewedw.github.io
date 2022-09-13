@@ -47,8 +47,8 @@ $$w_i = \frac{1}{2^i}$$
 
 $$
 \begin{align*}
-\mathcal{W} &= \{ 1, \frac12, \frac14, \dots \} \\
-&= \{ \frac{1}{2^0}, \frac{1}{2^1}, \frac{1}{2^2}, \dots \} \\
+\mathcal{W} &= \left\{ 1, \frac12, \frac14, \dots \right\} \\
+&= \left\{ \frac{1}{2^0}, \frac{1}{2^1}, \frac{1}{2^2}, \dots \right\} \\
 \end{align*}
 $$
 
