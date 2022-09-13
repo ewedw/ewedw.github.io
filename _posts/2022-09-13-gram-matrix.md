@@ -100,7 +100,7 @@ where element in row $$i$$ and column $$j$$ is
 $$
 \begin{align*}
 M_{ij} &= \vec{b_i} \cdot \vec{b_j} \\
-&= \sum_k b_{ik} b_{jk} \\
+&= \sum_k b_{ik} \, b_{jk} \\
 \end{align*}
 $$
 
