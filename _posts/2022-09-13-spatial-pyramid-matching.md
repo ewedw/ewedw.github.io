@@ -13,7 +13,7 @@ We will start from the basic idea in [**Pyramid Matching Kernel**](https://www.j
 
 ### Pyramid Matching Kernel
 
-Consider we have two 1D feature sets $$y$$ and $$z$$ (you can treat them as feature vectors), 
+Consider we have two 1-dimensional feature sets $$y$$ and $$z$$ (you can treat them as feature vectors), 
 
 ![pyramid_mathcing_kernel](\assets\img\pyramid_matching_kernel.png "pyramid matching kernel")
 
@@ -58,9 +58,11 @@ $$P_\Delta = \sum_{i=0}^{L-1} w_i ( \min (H_i(y), H_i(z)) - \min (H_{i-1}(y), H_
 
 where $$L-1 = \lceil \log_2 D \rceil$$ and $$D$$ is the diameter.
 
-### Why do we have the diameter $$D$$?
+### Where comes the diameter $$D$$?
 
-In the above example, we are considering some 1D vectors. If we have some $$d$$-dimensional vectors in feature space $$\mathcal{F}$$, the value of the element in vectors in $$\mathcal{F}$$ has a maximal range $$D$$. We can treat $$D$$ as the *diameter* of a $$d$$-dimensinal sphere.
+In the above example, we are considering some 1-dimensional vectors. 
+
+If we have some $$d$$-dimensional vectors in feature space $$\mathcal{F}$$, the value of the element in vectors in $$\mathcal{F}$$ has a maximal range $$D$$. We can view the vectors bounded by a $$d$$-dimensional sphere with *diameter* $$D$$.
 
 Thus, the kernel "bins" happens in a spherical ways, with radius $$r_i$$ as
 
