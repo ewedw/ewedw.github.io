@@ -114,7 +114,7 @@ It represents the correlation between the targeted (basis) vectors.
 
 When they are all orthogonal to one another, the **Gram matrix** is simply an identity matrix $$I$$.
 
-Suppose we have a set of feature vectors $$\mathcal{F}$$, and we wanna find another set of feature vectors $$\mathcal{G}_\theta$$ that have the same correlation. 
+Suppose we have a set of feature vectors $$\mathcal{F}$$, and we wanna find another set of feature vectors $$\mathcal{G}_\theta$$ with parameters $$\theta$$ that have the same correlation. 
 
 1.	Find the correlation between the features vectors $$\mathcal{F}$$ by computing the **Gram matrix** $$M(\mathcal{F})$$
 
