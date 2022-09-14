@@ -9,13 +9,17 @@ working: true
 
 # Texture Synthesis and Style Transfer
 
-Here we illustrate a **parametric approach** for **texture synthesis** and **image style transfer** using *Deep Convolutional Neural Network (CNN)* and [**Gram matrix**](\post\gram){:target="_blank"}.
+Here we illustrate a **parametric approach** for **texture synthesis** and then **image style transfer** using *Deep Convolutional Neural Network (CNN)* and [**Gram matrix**](\post\gram){:target="_blank"}.
 
 Paper:
 
 * [Texture Synthesis](https://arxiv.org/abs/1505.07376){:target="_blank"} ([Page](http://www.bethgelab.org/deeptextures/){:target="_blank"})
 
 * [Image Style Transfer](https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf){:target="_blank"}
+
+* [Real-Time Style Transfer](https://cs.stanford.edu/people/jcjohns/papers/eccv16/JohnsonECCV16.pdf){:target="_blank"}
+
+* [Learned Representation for Artistic Style](https://arxiv.org/pdf/1610.07629.pdf){:target="_blank"}
 
 ### Correlation between feature maps
 
