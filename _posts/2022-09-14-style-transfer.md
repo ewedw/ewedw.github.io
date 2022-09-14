@@ -127,6 +127,8 @@ $$E_l = \frac{1}{4 N_l^2 (H_l W_l)^2} \sum_{i,j} \left( G^l_{ij} - \hat{G^l_{ij}
 
 where we are simply taking the difference between the elements in $$G^l$$ and $$\hat{G^l}$$ and calculate an L2 loss.
 
-The **total loss** is defined as
+The **total loss** for all layers $$L$$ is defined as
 
 $$\mathcal{L}(\vec{x}, \hat{\vec{x}}) = \sum_{i=0}^L w_l E_l$$
+
+where $$w_l$$ is the weighting factors of the contribution of each layer $$l$$ to the total loss
