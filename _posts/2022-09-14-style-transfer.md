@@ -175,7 +175,7 @@ For structured texture, it is better to use [**non-parametric approach**](https:
 
 ![results non-param](\assets\img\texture_synthesis_results_non_param.png "Results for non-parametric approach")
 
-The basic idea for **non-parametric appraoch** for texture synthesis is to generate the new image pixel by pixel, sample from the nearest neighbours of the original texture image.
+We are not going to go in-depth for this approach here. The basic idea for **non-parametric appraoch** for texture synthesis is to generate the new image pixel by pixel, sample from the nearest neighbours of the original texture image.
 
 ![non-param](\assets\img\texture_synthesis_non_param.png "Non-parametric approach")
 
