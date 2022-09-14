@@ -22,7 +22,8 @@ permalink: /todo/
 
 ## Possible direction with attacks
 
-* Style transfer {% include span.html content="[Focus]" %} 
+* Style transfer {% include span.html content="[Focus]" %}  
+(Concept / Advanement / Videos...) 
 
 * Style transfer + Diffusion {% include span.html content="[Focus]" %} 
 
@@ -35,11 +36,15 @@ permalink: /todo/
 
 * Generative Model (Diffusion-based) {% include span.html content="[Focus]" %} 
 
+* Nerf
+
 * Image to animation...inbetweening (NeRF)
 
 * Image to animation...generative + style
 
 * Video segmentation (Layered Neural Atlases + Inpainting)
+
+* Nerf + Style Transfer
 
 ## Further direction
 
