@@ -176,7 +176,7 @@ Let's think a bit deper. For structured texture, it is obviously better to use a
 
 ![structured bamboo](\assets\img\structured_pattern.png "Structured bamboo pattern")
 
-We are not going to go in-depth for this approach here. The basic idea for **non-parametric appraoch** for texture synthesis is to generate the new image pixel by pixel, sample from the nearest neighbours of the original texture image.
+We are not going to go in-depth for this approach here. The basic idea for **non-parametric approach** for texture synthesis is to generate the new image pixel by pixel, sample from the **nearest neighbours** of the original texture image.
 
 ![non-param](\assets\img\texture_synthesis_non_param.png "Non-parametric approach")
 
