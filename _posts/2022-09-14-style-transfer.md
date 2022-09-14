@@ -161,15 +161,20 @@ Visit the [page](http://www.bethgelab.org/deeptextures/){:target="_blank"} for m
 
 * The higher (deeper) the layers are up to, the better the quality of the generated image $$\hat{\vec{x}}$$
 
-* A lot of paraemeters are needed
+* A lot of parameters are needed
 
-* Good for more random texture (i.e. a bunch of stones)  
+* Good for more random texture  
+(i.e. a bunch of stones)  
 
-* Bad for structured texture (i.e. bricks wall)  
-Better to use [**non-parametric approach**](https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/papers/efros-iccv99.pdf){:target="_blank"}
+* Bad for structured texture  
+(i.e. bricks wall)  
+
+For structured texture, better to use [**non-parametric approach**](https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/papers/efros-iccv99.pdf){:target="_blank"}
 
 ![results non-param](\assets\img\texture_synthesis_results_non_param.png "Results for non-parametric approach")
 
 The basic idea for **non-parametric appraoch** for texture synthesis is to generate the new image pixel by pixel, sample from the nearest neighbours of the original texture image.
 
 ![non-param](\assets\img\texture_synthesis_non_param.png "Non-parametric approach")
+
+View this [paper](https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/papers/efros-iccv99.pdf){:target="_blank"} for details.
