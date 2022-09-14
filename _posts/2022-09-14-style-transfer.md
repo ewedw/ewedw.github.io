@@ -50,7 +50,7 @@ We can view it as $$N_l$$ numbers of feature maps, where the feature map wth $$i
 
 $$
 \begin{align*}
-F^l &\in \mathbb{R}^{N_l \times H_l W_l}
+F^l &\in \mathbb{R}^{N_l \times H_l W_l} \\
 F^l_i &\in \mathbb{R}^{H_l W_l}
 \end{align*}
 $$
