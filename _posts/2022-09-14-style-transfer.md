@@ -193,3 +193,7 @@ View this [paper](https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/pap
 ### Style Transfer
 
 #TODO
+
+### Advances
+
+#TODO (2017 Texture Review)
