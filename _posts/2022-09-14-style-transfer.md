@@ -179,3 +179,7 @@ We are not going to go in-depth for this approach here. The basic idea for **non
 ![non-param](\assets\img\texture_synthesis_non_param.png "Non-parametric approach")
 
 View this [paper](https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/papers/efros-iccv99.pdf){:target="_blank"} for details.
+
+### Style Transfer
+
+#TODO
