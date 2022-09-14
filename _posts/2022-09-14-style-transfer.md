@@ -170,17 +170,19 @@ Visit the [page](http://www.bethgelab.org/deeptextures/){:target="_blank"} for m
 
 It is understandable, since the [**loss function**](#loss_function) matches the *texture* (**Gram matrix**) but not the *content* (feature maps). Maybe adding a match on the high-level features (in the higher layers) to the **loss function** can help improve this.
 
-### Non-parametric approach
+### Non-parametric approach for structured texture
 
-For structured texture, it is better to use [**non-parametric approach**](https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/papers/efros-iccv99.pdf){:target="_blank"}
+Let's think a bit deper. For structured texture, it is obviously better to use a [**non-parametric approach**](https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/papers/efros-iccv99.pdf){:target="_blank"}. If the texture is structured, we can simply "copy and paste" a patch from it and generate new images from it and it will look all fine, for example 
 
-![results non-param](\assets\img\texture_synthesis_results_non_param.png "Results for non-parametric approach")
+![structured bamboo](\assets\img\structured_pattern.png "Structured bamboo pattern")
 
 We are not going to go in-depth for this approach here. The basic idea for **non-parametric appraoch** for texture synthesis is to generate the new image pixel by pixel, sample from the nearest neighbours of the original texture image.
 
 ![non-param](\assets\img\texture_synthesis_non_param.png "Non-parametric approach")
 
 View this [paper](https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/papers/efros-iccv99.pdf){:target="_blank"} for details.
+
+![results non-param](\assets\img\texture_synthesis_results_non_param.png "Results for non-parametric approach")
 
 ### Style Transfer
 
