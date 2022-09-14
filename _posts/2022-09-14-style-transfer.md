@@ -33,19 +33,37 @@ Consider the following architecture,
 
 ![texture_synth](\assets\img\texture_synthesis.png "texture synthesis")
 
-* First, we **pretrained** a *CNN* (i.e. VGG-19).  
+First, we **pretrained** a *CNN* (i.e. VGG-19).  
 In the image, there are 16 *convolutional layers* (grouped as 2-2-4-4-4) and 5 *max-pooling layers*. There are no *fully-connected layers* at the end. 
 
-	* Filter size as $$3 \times 3 \times k$$ while *stride* and *padding* both equals 1.
+* Filter size as $$3 \times 3 \times k$$ while *stride* and *padding* both equals 1.
 
-	* Max-pooling in non-overlapping $$2 \times 2$$ region.
+* Max-pooling in non-overlapping $$2 \times 2$$ region.
 
-* Then, we input the vectorized texture image $$\vec{x}$$ into the trained *CNN*, where each (convolution) layer $$l$$ produces $$N_l$$ feature maps $$F^l$$ with shape $$H_l \times W_l$$, so the output dimension as
+Then, we input the vectorized texture image $$\vec{x}$$ into the trained *CNN*, where each (convolution) layer $$l$$ produces $$N_l$$ feature maps $$F^l$$ with shape $$H_l \times W_l$$, so the output dimension as
 
 $$N_l \times H_l \times W_l$$
 
 ![before_vec](\assets\img\cnn_before_vec.png "Before vectorized")
 
-* To find the correlation between feature maps $$F^l$$ in layer $$l$$, we can first vectorized each feature maps $$F^l \in \mathbb{R}^{H_l \times W_l} \to \mathbb{R}^{H_l W_l}$$ and compute the [**Gram matrix**](\post\gram){:target="_blank"} with the vectorized feature maps $$F^l \in \mathbb{R}^{H_l W_l}$$.
+To find the correlation between feature maps $$F^l$$ in layer $$l$$, we can first vectorize each feature maps from $$F^l \in \mathbb{R}^{H_l \times W_l} \to \vec{F^l} \in \mathbb{R}^{H_l W_l}$$ and compute the [**Gram matrix**](\post\gram){:target="_blank"} $$G^l \in \mathbb{R}^{N_l \times N_l}$$ with the vectorized feature maps $$F^l$$.
 
 ![after_vec](\assets\img\cnn_after_vec.png "After vectorized")
+
+$$G^l = 
+\begin{bmatrix}
+\vec{F^l_1} \cdot \vec{F^l_1} & \cdots &  \vec{b_1} \cdot \vec{F^l_n}\\
+\vdots & \ddots & \vdots \\
+\vec{F^l_n} \cdot \vec{b_1} & \cdots & \vec{F^l_n} \cdot \vec{F^l_n}
+\end{bmatrix}$$
+
+where element in row $$i$$ and column $$j$$ is
+
+$$
+\begin{align*}
+G^l_{ij} &= \vec{F^l_i} \cdot \vec{F^l_j} \\
+&= \sum_k F^l_{ik} \, F^l_{jk}
+\end{align*}
+$$
+
+where $$k$$ denotes the $$k$$-th element in vectorized feature maps $$F^l$$.
