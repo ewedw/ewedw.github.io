@@ -157,6 +157,8 @@ Image from the [paper](https://arxiv.org/abs/1505.07376){:target="_blank"}.
 
 The labels "conv1_1", "pool1", "pool2", "pool3", "pool4" describe the layers included up to in the calculation of $$\mathcal{L}(\vec{x}, \hat{\vec{x}})$$.
 
+Visit the [page](http://www.bethgelab.org/deeptextures/){:target="_blank"} for more synthesized results.
+
 * The higher (deeper) the layers are up to, the better the quality of the generated image $$\hat{\vec{x}}$$
 
 * A lot of paraemeters are needed
@@ -166,4 +168,8 @@ The labels "conv1_1", "pool1", "pool2", "pool3", "pool4" describe the layers inc
 * Bad for structured texture (i.e. bricks wall)  
 Better to use [**non-parametric approach**](https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/papers/efros-iccv99.pdf){:target="_blank"}
 
-Visit the [page](http://www.bethgelab.org/deeptextures/){:target="_blank"} for more synthesized results.
+![results non-param](\assets\img\texture_synthesis_results_non_param.png "Results for non-parametric approach")
+
+The basic idea for **non-parametric appraoch** for texture synthesis is to generate the new image pixel by pixel, sample from the nearest neighbours of the original texture image.
+
+![non-param](\assets\img\texture_synthesis_non_param.png "Non-parametric approach")
