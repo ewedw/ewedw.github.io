@@ -8,13 +8,13 @@ permalink: /todo/
 
 * Linear Algebra
 
-* PGM / CS228 {% include focus.html %}  
+* PGM / CS228 {% include span.html content="[Focus]" %} 
 (Sampling / Inference / Learning...) 
 
-* CS231n {% include focus.html %}  
+* CS231n {% include span.html content="[Focus]" %}  
 (Style Transfer / Self-supervised / Attention / Video...) 
 
-* CS236 {% include focus.html %}  
+* CS236 {% include span.html content="[Focus]" %}   
 (VAE / Energy / Score / Diffusion...)
 
 * CS229  
@@ -22,17 +22,17 @@ permalink: /todo/
 
 ## Possible direction with attacks
 
-* Style transfer {% include focus.html %}
+* Style transfer {% include span.html content="[Focus]" %} 
 
-* Style transfer + Diffusion {% include focus.html %}
+* Style transfer + Diffusion {% include span.html content="[Focus]" %} 
 
-* Style distribution (Multvariate Gaussian with Gram matrix) {% include focus.html %}
+* Style distribution (Multvariate Gaussian with Gram matrix) {% include span.html content="[Focus]" %} 
 
-* Grayscale to Color (Self-supervised) {% include focus.html %}
+* Grayscale to Color (Self-supervised)
 
 * Sketch to Grayscale
 
-* Generative Model (Diffusion-based) {% include focus.html %}
+* Generative Model (Diffusion-based) {% include span.html content="[Focus]" %} 
 
 * Image to animation...inbetweening (NeRF)
 
@@ -41,8 +41,6 @@ permalink: /todo/
 * Video segmentation (Layered Neural Atlases + Inpainting)
 
 ## Further direction
-
-* Content-dependent Style representation {% include focus.html %}
 
 * Image to 3D function
 
