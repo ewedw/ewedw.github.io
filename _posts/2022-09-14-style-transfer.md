@@ -40,13 +40,17 @@ In the above image, there are 16 **convolutional layers** (grouped as 2-2-4-4-4)
 
 * **Max-pooling** in non-overlapping $$2 \times 2$$ region.
 
-Then, we input the vectorized texture image $$\vec{x}$$ into the trained *CNN*, where each (convolution) layer $$l$$ produces feature maps matrix $$F^l$$ with shape $$N_l \times H_l \times W_l$$
+Then, we input the vectorized texture image $$\vec{x}$$ into the trained *CNN*, where each (convolution) layer $$l$$ produces feature maps matrix $$F^l$$ with shape $$N_l \times H_l \times W_l$$ and the feature map for the $$i$$-th filter as $$F^l_i$$ (colored in blue).
 
-$$F^l \in \mathbb{R}^{N_l \times H_l \times W_l}$$
+$$
+\begin{align*}
+F^l &\in \mathbb{R}^{N_l \times H_l \times W_l} \\
+F^l_i &\in \mathbb{R}^{H_l \times W_l}
+\end{align*}$$
 
 ![before_vec](\assets\img\cnn_before_vec.png "Feature maps matrix Before vectorized")
 
-We can view it as $$N_l$$ numbers of feature maps, where the feature map wth $$i$$-th filter denote as $$F^l_i$$. To find the correlation between each feature map $$F^l_i$$, we vectorize them from shape $$H_l \times W_l$$ to shape $$H_l W_l$$, 
+We can view it as $$N_l$$ numbers of feature maps P$$F^l_i$$. To find the correlation between each feature map $$F^l_i$$, we vectorize them from shape $$H_l \times W_l$$ to shape $$H_l W_l$$, 
 
 $$
 \begin{align*}
