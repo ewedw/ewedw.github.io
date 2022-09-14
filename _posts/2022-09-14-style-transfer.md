@@ -111,7 +111,8 @@ Recall a few notation
 
 * $$\vec{x}$$: the original texture image
 
-* $$\hat{\vec{x}}$$: the generated image
+* $$\hat{\vec{x}}$$: the generated image  
+(We add $$\hat{\,}$ for the following if it is related to $$\hat{\vec{x}}$$)
 
 * $$\vec{F^l}$$: the vectroized feature maps matrix for layer $$l$$ with shape $$N_l \times H_l  W_l$$
 
