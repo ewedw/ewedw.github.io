@@ -165,7 +165,7 @@ Visit the [page](http://www.bethgelab.org/deeptextures/){:target="_blank"} for m
 * Good for more random texture  
 (i.e. a bunch of stones)  
 
-* Bad for structured texture  
+* Bad for structured / grid-like texture  
 (i.e. bricks wall)  
 
 It is understandable, since the [**loss function**](#loss_function) matches the *texture* (**Gram matrix**) but not the *content* (feature maps). Maybe adding a match on the high-level features (in the higher layers) to the **loss function** can help improve this.
