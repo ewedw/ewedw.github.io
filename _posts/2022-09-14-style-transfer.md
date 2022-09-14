@@ -168,7 +168,7 @@ Visit the [page](http://www.bethgelab.org/deeptextures/){:target="_blank"} for m
 * Bad for structured and parallel texture  
 (i.e. bricks wall)  
 
-It is understandable, since the [**loss function**](#loss_function) matches the *texture* (**Gram matrix**) but not the *content* (feature maps). Maybe adding a match on the high-level features to theloss function can help improve this.
+It is understandable, since the [**loss function**](#loss_function) matches the *texture* (**Gram matrix**) but not the *content* (feature maps). Maybe adding a match on the high-level features (in the higher layers) to the **loss function** can help improve this.
 
 ### Non-parametric approach
 
