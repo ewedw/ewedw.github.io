@@ -168,6 +168,8 @@ Visit the [page](http://www.bethgelab.org/deeptextures/){:target="_blank"} for m
 * Bad for structured and parallel texture  
 (i.e. bricks wall)  
 
+It is understandable, since the [**loss function**](#loss_function) matches the *texture* (**Gram matrix**) but not the *content* (feature maps).
+
 ### Non-parametric approach
 
 For structured texture, it is better to use [**non-parametric approach**](https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/papers/efros-iccv99.pdf){:target="_blank"}
