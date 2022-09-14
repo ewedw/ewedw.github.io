@@ -17,7 +17,7 @@ Paper:
 
 * [Image Style Transfer](https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf){:target="_blank"}
 
-### Texture Synthesis - Correlation between feature maps
+### Correlation between feature maps
 
 Consider we have a texture image and want to synthesis a different image with the same texture. In other words, we want an image with different *content* BUT the same *texture*.
 
@@ -81,9 +81,9 @@ $$
 
 A set of **Gram matrices** $$\{ G^1, \dots, G^L\}$$ are produced for $$L$$ layers $$\{ 1, \dots, L\}$$.
 
-### Texture Synthesis - Generating new image with same texture
+### Texture Synthesis with new images
 
-After quantifying *texture* with the correlation between feature maps $$F^l_i$$ in layer $$l$$ by **Gram matrix**, we are going to generate new iamges with same texture.
+After quantifying *texture* with **Gram matrix**, we are going to generate new images with same texture.
 
 ![texture_synth](\assets\img\texture_synthesis.png "texture synthesis")
 
@@ -93,12 +93,40 @@ The approach is as follows,
 
 * We feed it to the same *CNN* as above.
 
-* We calculate a set of **Gram matrices** $$\{ \hat{G}^1, \dots, \hat{G}^L\}$$ for $$L$$ layers $$\{ 1, \dots, L\}$$ from feature maps $$\hat{F}^l$$ as above.
+* We calculate a set of **Gram matrices** $$\{ \hat{G^1}, \dots, \hat{G^L}\}$$ for $$L$$ layers $$\{ 1, \dots, L\}$$ from feature maps $$\hat{F}^l$$ as above.
 
 * We compare the difference between 
 
-	* the **Gram matrices** $$\{ G^1, \dots, G^L\}$$ for real texture image $$\vec{x}$$
+	* the **Gram matrices** $$\{ G^1, \dots, G^L\}$$ for original texture image $$\vec{x}$$
 
-	* and the **Gram matrices** $$\{ \hat{G}^1, \dots, \hat{G}^L\}$$ for generated image $$\hat{\vec{x}}$$
+	* and the **Gram matrices** $$\{ \hat{G^1}, \dots, \hat{G^L}\}$$ for generated image $$\hat{\vec{x}}$$
 
-* We do **gradient descent** to minimize the difference (match the *texture* of the generated image $$\hat{\vec{x}}$$ to the real texture image$$\vec{x}$$)
+* We do **gradient descent** and [**back-propagation**](https://youtu.be/tIeHLnjs5U8){:target="_blank"} to minimize the difference (match the *texture* of the generated image $$\hat{\vec{x}}$$ to the real texture image $$\vec{x}$$)
+
+There are two things left to be considered, the **loss function** for comparing the difference and the **gradient** of it.
+
+### Loss function
+
+Recall a few notation
+
+* $$\vec{x}$$: the original texture image
+
+* $$\hat{\vec{x}}$$: the generated image
+
+* $$\vec{F^l}$$: the vectroized feature maps matrix for layer $$l$$ with shape $$N_l \times H_l  W_l$$
+
+* $$\vec{F^l_i}$$: the vectorized feature maps in $$i$$-th filter for layer $$l$$ with shape $$H_l W_l$$
+
+* $$G^l$$: the **Gram matrices** for $$\vec{x}$$
+
+* $$G^l_ij$$: the element in the **Gram matrices** with row $$i$$ column $$j$$
+
+The loss function $$E_l$$ for lay $$l$$ is defined as
+
+$$E_l = \frac{1}{4 N_l^2 (H_l W_l)^2} \sum_{i,j} \left( G^l_{ij} - \hat{G^l_{ij}} \right)^2$$
+
+where we are simply taking the difference between the elements in $$G^l$$ and $$\hat{G^l}$$ and calculate an L2 loss.
+
+The **total loss** is defined as
+
+$$\mathcal{L}(\vec{x}, \hat{\vec{x}}) = \sum_{i=0}^L w_l E_l$$
