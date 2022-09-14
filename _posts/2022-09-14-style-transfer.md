@@ -139,7 +139,7 @@ where $$w_l$$ is the weighting factors of the contribution of each layer $$l$$ t
 $$
 \frac{\partial E_l}{\partial \hat{\vec{F^l_{ij}}} } = 
 \begin{cases} 
-\\ 
+\frac{1}{N_l^2 (H_l W_l)^2} \left( (\hat{\vec{F^l}})^T \left( G^l_{ij} - \hat{G^l_{ij}} \right) \right) & \text{if } \hat{\vec{F^l_{ij}}} > 0  \\ 
 0 & \text{if } \hat{\vec{F^l_{ij}}} < 0 
 \end{cases}
 $$
