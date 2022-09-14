@@ -26,7 +26,8 @@ permalink: /todo/
 
 * Style transfer + Diffusion {% include span.html content="[Focus]" %} 
 
-* Style distribution (Multvariate Gaussian with Gram matrix) {% include span.html content="[Focus]" %} 
+* Learning style distribution {% include span.html content="[Focus]" %}  
+(Multvariate Gaussian with Gram matrix + Diffusion)  
 
 * Grayscale to Color (Self-supervised)
 

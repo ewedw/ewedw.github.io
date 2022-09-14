@@ -132,7 +132,7 @@ The layer loss $$E_l$$ for layer $$l$$ is defined as
 
 $$E_l = \frac{1}{4 N_l^2 (H_l W_l)^2} \sum_{i,j} \left( G^l_{ij} - \hat{G^l_{ij}} \right)^2$$
 
-where we are simply taking the difference between the elements in $$G^l$$ and $$\hat{G^l}$$ and calculate an L2 loss.
+where we are simply taking the difference between the elements in $$G^l$$ and $$\hat{G^l}$$ and calculate the L2 loss.
 
 The **total loss** for all $$L$$ layers $$\{ 1, \dots, L\}$$ is defined as
 
