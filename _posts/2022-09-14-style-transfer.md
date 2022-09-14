@@ -70,7 +70,7 @@ $$G^l =
 \vec{F^l_n} \cdot \vec{F^l_1} & \cdots & \vec{F^l_n} \cdot \vec{F^l_n}
 \end{bmatrix}$$
 
-where element in row $$i$$ and column $$j$$ is taken as the **dot product**,
+where element in row $$i$$ and column $$j$$ is taken as the **dot product**, and $$k$$ denotes the $$k$$-th element in any vectorized feature map $$F^l_i$$ or $$F^l_j$$, 
 
 $$
 \begin{align*}
@@ -79,4 +79,5 @@ G^l_{ij} &= \vec{F^l_i} \cdot \vec{F^l_j} \\
 \end{align*}
 $$
 
-and $$k$$ denotes the $$k$$-th element in any vectorized feature map $$F^l_i$$ or $$F^l_j$$.
+A set of **Gram matrices** $$\{ G^1, \dots, G^L\}$$ are produced for $$L$$ layers $$\{ 1, \dots, L\}$$.
+
