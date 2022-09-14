@@ -8,7 +8,7 @@ permalink: /todo/
 
 * Linear Algebra
 
-* PGM / CS228 {% include span.html content="[Focus]" %} 
+* PGM / CS228 {% include span.html content="[Focus]" %}  
 (Sampling / Inference / Learning...) 
 
 * CS231n {% include span.html content="[Focus]" %}  
