@@ -143,3 +143,5 @@ $$
 0 & \text{if } \hat{\vec{F^l_{i}}} < 0 
 \end{cases}
 $$
+
+$$\frac{\partial \mathcal{L}}{\partial \hat{\vec{x}}}$$ can be computed using [**back-propagation**](https://youtu.be/tIeHLnjs5U8){:target="_blank"}. 
