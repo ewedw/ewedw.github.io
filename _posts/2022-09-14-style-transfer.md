@@ -165,14 +165,14 @@ Visit the [page](http://www.bethgelab.org/deeptextures/){:target="_blank"} for m
 * Good for more random texture  
 (i.e. a bunch of stones)  
 
-* Bad for structured and parallel texture  
+* Bad for structured texture  
 (i.e. bricks wall)  
 
 It is understandable, since the [**loss function**](#loss_function) matches the *texture* (**Gram matrix**) but not the *content* (feature maps). Maybe adding a match on the high-level features (in the higher layers) to the **loss function** can help improve this.
 
 ### Non-parametric approach for structured texture
 
-Let's think a bit deper. For structured texture, it is obviously better to use a [**non-parametric approach**](https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/papers/efros-iccv99.pdf){:target="_blank"}. If the texture is structured, we can simply "copy and paste" a patch from it and generate new images from it and it will look all fine, for example 
+Let's think about it. For structured texture, it is intuitively better to use a [**non-parametric approach**](https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/papers/efros-iccv99.pdf){:target="_blank"}. Given a structured texture (see the bamboo pattern image below), we can simply "copy and paste" a patch from it and generate new images from it. It will look all fine!
 
 ![structured bamboo](\assets\img\structured_pattern.png "Structured bamboo pattern")
 
