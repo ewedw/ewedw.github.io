@@ -50,7 +50,7 @@ F^l_i &\in \mathbb{R}^{H_l \times W_l}
 
 ![before_vec](\assets\img\cnn_before_vec.png "Feature maps matrix Before vectorized")
 
-We can view it as $$N_l$$ numbers of feature maps P$$F^l_i$$. To find the correlation between each feature map $$F^l_i$$, we vectorize them from shape $$H_l \times W_l$$ to shape $$H_l W_l$$, 
+We can view it as $$N_l$$ numbers of feature maps $$F^l_i$$. To find the correlation between each feature map $$F^l_i$$, we vectorize them from shape $$H_l \times W_l$$ to shape $$H_l W_l$$ (colored in blue), 
 
 $$
 \begin{align*}
@@ -117,18 +117,18 @@ Recall a few notation
 
 * $$\vec{F^l_i}$$: the vectorized feature maps in $$i$$-th filter for layer $$l$$ with shape $$H_l W_l$$
 
-* $$G^l$$: the **Gram matrices** for $$\vec{x}$$
+* $$G^l$$: the **Gram matrix** for layer $$l$$
 
-* $$G^l_ij$$: the element in the **Gram matrices** with row $$i$$ column $$j$$
+* $$G^l_{ij}$$: the element in the **Gram matrix** with row $$i$$ and column $$j$$
 
-The loss function $$E_l$$ for lay $$l$$ is defined as
+The layer loss $$E_l$$ for layer $$l$$ is defined as
 
 $$E_l = \frac{1}{4 N_l^2 (H_l W_l)^2} \sum_{i,j} \left( G^l_{ij} - \hat{G^l_{ij}} \right)^2$$
 
 where we are simply taking the difference between the elements in $$G^l$$ and $$\hat{G^l}$$ and calculate an L2 loss.
 
-The **total loss** for all layers $$L$$ is defined as
+The **total loss** for all $$L$$ layers $$\{ 1, \dots, L\}$$ is defined as
 
 $$\mathcal{L}(\vec{x}, \hat{\vec{x}}) = \sum_{i=0}^L w_l E_l$$
 
-where $$w_l$$ is the weighting factors of the contribution of each layer $$l$$ to the total loss
+where $$w_l$$ is the weighting factors of the contribution of each layer $$l$$ to the total loss.
