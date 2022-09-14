@@ -147,7 +147,7 @@ $$
 
 where $$k$$ denotes the $$k$$-th element in the vectorized feature map $$\hat{\vec{F^l_i}}$$
 
-$$\frac{\partial \mathcal{L}}{\partial \hat{\vec{x}}}$$ can be computed using [**back-propagation**](https://youtu.be/tIeHLnjs5U8){:target="_blank"}. 
+$$\displaystyle \frac{\partial \mathcal{L}}{\partial \hat{\vec{x}}}$$ can be computed using [**back-propagation**](https://youtu.be/tIeHLnjs5U8){:target="_blank"}. 
 
 ### Results
 
