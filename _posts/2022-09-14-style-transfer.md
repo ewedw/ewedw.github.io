@@ -143,5 +143,3 @@ $$
 0 & \text{if } \hat{\vec{F^l_{i}}} < 0 
 \end{cases}
 $$
-
-where $$k$$ denotes the $$k$$-th element in the vectorized feature map $$F^l_i$$.
