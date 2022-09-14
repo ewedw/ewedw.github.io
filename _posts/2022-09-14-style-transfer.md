@@ -165,7 +165,7 @@ Visit the [page](http://www.bethgelab.org/deeptextures/){:target="_blank"} for m
 * Good for more random texture  
 (i.e. a bunch of stones)  
 
-* Bad for structured texture  
+* Bad for structured and parallel texture  
 (i.e. bricks wall)  
 
 ### Non-parametric approach
