@@ -21,6 +21,8 @@ Paper:
 
 * [Learned Representation for Artistic Style](https://arxiv.org/pdf/1610.07629.pdf){:target="_blank"}
 
+* [Controlling Perceptual Factors in Neural Style Transfer](https://arxiv.org/pdf/1611.07865.pdf){:target="_blank"}
+
 ### Correlation between feature maps
 
 Consider we have a texture image and want to synthesis a different image with the same texture. In other words, we want an image with different *content* BUT the same *texture*.
