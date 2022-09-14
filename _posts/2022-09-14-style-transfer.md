@@ -9,7 +9,7 @@ working: true
 
 # Texture Synthesis and Style Transfer
 
-Here we illustrate a parametric approach for **texture synthesis** and **image style transfer** using *Deep Convolutional Neural Network (CNN)* and [**Gram matrix**](\post\gram){:target="_blank"}.
+Here we illustrate a **parametric** approach for **texture synthesis** and **image style transfer** using *Deep Convolutional Neural Network (CNN)* and [**Gram matrix**](\post\gram){:target="_blank"}.
 
 Paper:
 
