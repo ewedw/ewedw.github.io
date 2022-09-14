@@ -13,7 +13,8 @@ Here we illustrate a parametric approach for **texture synthesis** and **image s
 
 Paper:
 
-* [Texture Synthesis](https://arxiv.org/abs/1505.07376){:target="_blank"}
+* [Texture Synthesis](https://arxiv.org/abs/1505.07376){:target="_blank"}  
+[Page](http://www.bethgelab.org/deeptextures/){:target="_blank"}  
 
 * [Image Style Transfer](https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf){:target="_blank"}
 
