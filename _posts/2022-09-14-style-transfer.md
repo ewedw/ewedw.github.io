@@ -40,12 +40,12 @@ In the image, there are 16 *convolutional layers* (grouped as 2-2-4-4-4) and 5 *
 
 	* Max-pooling in non-overlapping $$2 \times 2$$ region.
 
-* Then, we input the vectorized texture image $$\vec{x}$$ into the trained *CNN*, where each (convolution) layer $$i$$ produces $$C_i$$ feature maps with shape $$H_i \times W_i$$, so the output dimension as
+* Then, we input the vectorized texture image $$\vec{x}$$ into the trained *CNN*, where each (convolution) layer $$l$$ produces $$N_l$$ feature maps $$F^l$$ with shape $$H_l \times W_l$$, so the output dimension as
 
-$$C_i \times H_i \times W_i$$
+$$N_l \times H_l \times W_l$$
 
-* To find the correlation between features in the same layer, we can first vectorized each maps $$H_i \times W_i$$ and then compute the [**Gram matrix**](\post\gram){:target="_blank"}.
+![before_vec](\assets\img\cnn_before_vec.png "Before vectorized")
 
+* To find the correlation between feature maps $$F^l$$ in layer $$l$$, we can first vectorized each feature maps $$H_i \times W_i$$ and then compute the [**Gram matrix**](\post\gram){:target="_blank"} with the vectorized feature maps $$H_iW_i$$.
 
-
-
+![after_vec](\assets\img\cnn_after_vec.png "After vectorized")
