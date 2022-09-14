@@ -70,7 +70,7 @@ $$G^l =
 \vec{F^l_n} \cdot \vec{F^l_1} & \cdots & \vec{F^l_n} \cdot \vec{F^l_n}
 \end{bmatrix}$$
 
-where element in row $$i$$ and column $$j$$ is taken as the **dot product**, and $$k$$ denotes the $$k$$-th element in any vectorized feature map $$\vec{F^l_i}$$ or $$\vec{F^l_j$$, 
+where element in row $$i$$ and column $$j$$ is taken as the **dot product**, and $$k$$ denotes the $$k$$-th element in any vectorized feature map $$\vec{F^l_i}$$ or $$\vec{F^l_j}$$, 
 
 $$
 \begin{align*}
