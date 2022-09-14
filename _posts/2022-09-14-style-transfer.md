@@ -34,23 +34,30 @@ Consider the following architecture,
 ![texture_synth](\assets\img\texture_synthesis.png "texture synthesis")
 
 First, we **pretrained** a *CNN* (i.e. VGG-19).  
-In the above image, there are 16 *convolutional layers* (grouped as 2-2-4-4-4) and 5 *max-pooling layers*. There are no *fully-connected layers* at the end. 
+In the above image, there are 16 **convolutional layers** (grouped as 2-2-4-4-4) and 5 **max-pooling layers**. There are NO **fully-connected layers** at the end. 
 
-* Filter size as $$3 \times 3 \times k$$ while *stride* and *padding* both equals 1.
+* **Filter size** as $$3 \times 3 \times k$$ while **stride** and **padding** both equals 1.
 
-* Max-pooling in non-overlapping $$2 \times 2$$ region.
+* **Max-pooling** in non-overlapping $$2 \times 2$$ region.
 
-Then, we input the vectorized texture image $$\vec{x}$$ into the trained *CNN*, where each (convolution) layer $$l$$ produces $$N_l$$ feature maps $$F^l$$ with shape $$H_l \times W_l$$, so the output dimension as
+Then, we input the vectorized texture image $$\vec{x}$$ into the trained *CNN*, where each (convolution) layer $$l$$ produces feature maps matrix $$F^l$$ with shape $$N_l \times H_l \times W_l$$
 
-$$N_l \times H_l \times W_l$$
+$$F^l \in \mathbb{R}^{N_l \times H_l \times W_l}$$
 
-![before_vec](\assets\img\cnn_before_vec.png "Before vectorized")
+![before_vec](\assets\img\cnn_before_vec.png "Feature maps matrix Before vectorized")
 
-To find the correlation between feature maps $$F^l$$ in layer $$l$$, we can first vectorize each feature maps from $$F^l \in \mathbb{R}^{H_l \times W_l} \to \vec{F^l} \in \mathbb{R}^{H_l W_l}$$ and compute the [**Gram matrix**](\post\gram){:target="_blank"} $$G^l \in \mathbb{R}^{N_l \times N_l}$$ with the vectorized feature maps $$F^l$$.
+We can view it as $$N_l$$ numbers of feature maps, where the feature map wth $$i$$-th filter denote as $$F^l_i$$. To find the correlation between each feature map $$F^l_i$$, we vectorize them from shape $$H_l \times W_l$$ to shape $$H_l W_l$$, 
 
-$$ N_l \times H_l W_l$$
+$$
+\begin{align*}
+F^l &\in \mathbb{R}^{N_l \times H_l W_l}
+F^l_i &\in \mathbb{R}^{H_l W_l}
+\end{align*}
+$$
 
-![after_vec](\assets\img\cnn_after_vec.png "After vectorized")
+![after_vec](\assets\img\cnn_after_vec.png "Feature maps matrix After vectorized")
+
+and compute the [**Gram matrix**](\post\gram){:target="_blank"} $$G^l \in \mathbb{R}^{N_l \times N_l}$$ with the **inner product** of the vectorized feature maps $$F^l_i$$.
 
 $$G^l = 
 \begin{bmatrix}
@@ -59,7 +66,7 @@ $$G^l =
 \vec{F^l_n} \cdot \vec{F^l_1} & \cdots & \vec{F^l_n} \cdot \vec{F^l_n}
 \end{bmatrix}$$
 
-where element in row $$i$$ and column $$j$$ is taken as the *dot product*,
+where element in row $$i$$ and column $$j$$ is taken as the **dot product**,
 
 $$
 \begin{align*}
@@ -68,4 +75,4 @@ G^l_{ij} &= \vec{F^l_i} \cdot \vec{F^l_j} \\
 \end{align*}
 $$
 
-and $$k$$ denotes the $$k$$-th element in any vectorized feature map $$F^l$$.
+and $$k$$ denotes the $$k$$-th element in any vectorized feature map $$F^l_i$$ or $$F^l_j$$.
