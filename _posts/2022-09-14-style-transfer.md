@@ -54,12 +54,12 @@ $$ N_l \times H_l W_l$$
 
 $$G^l = 
 \begin{bmatrix}
-\vec{F^l_1} \cdot \vec{F^l_1} & \cdots &  \vec{b_1} \cdot \vec{F^l_n}\\
+\vec{F^l_1} \cdot \vec{F^l_1} & \cdots &  \vec{F^l_1} \cdot \vec{F^l_n}\\
 \vdots & \ddots & \vdots \\
-\vec{F^l_n} \cdot \vec{b_1} & \cdots & \vec{F^l_n} \cdot \vec{F^l_n}
+\vec{F^l_n} \cdot \vec{F^l_1} & \cdots & \vec{F^l_n} \cdot \vec{F^l_n}
 \end{bmatrix}$$
 
-where element in row $$i$$ and column $$j$$ is
+where element in row $$i$$ and column $$j$$ is taken as the *dot product*,
 
 $$
 \begin{align*}
@@ -68,4 +68,4 @@ G^l_{ij} &= \vec{F^l_i} \cdot \vec{F^l_j} \\
 \end{align*}
 $$
 
-where $$k$$ denotes the $$k$$-th element in vectorized feature maps $$F^l$$.
+and $$k$$ denotes the $$k$$-th element in any vectorized feature map $$F^l$$.
