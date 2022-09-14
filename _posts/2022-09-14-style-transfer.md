@@ -162,6 +162,8 @@ The labels "conv1_1", "pool1", "pool2", "pool3", "pool4" describe the layers inc
 * A lot of paraemeters are needed
 
 * Good for more random texture (i.e. a bunch of stones)  
-Bad for structured texture (i.e. bricks wall) 
+
+* Bad for structured texture (i.e. bricks wall)  
+Better to use [**non-parametric approach**](https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/papers/efros-iccv99.pdf){:target="_blank"}
 
 Visit the [page](http://www.bethgelab.org/deeptextures/){:target="_blank"} for more synthesized results.
