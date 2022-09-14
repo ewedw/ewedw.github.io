@@ -133,3 +133,13 @@ The **total loss** for all $$L$$ layers $$\{ 1, \dots, L\}$$ is defined as
 $$\mathcal{L}(\vec{x}, \hat{\vec{x}}) = \sum_{i=0}^L w_l E_l$$
 
 where $$w_l$$ is the weighting factors of the contribution of each layer $$l$$ to the total loss.
+
+### Gradient
+
+$$
+\frac{\partial E_l}{\partial \hat{\vec{F^l_{ij}}} } = 
+\begin{cases} 
+\\ 
+0 & \text{if } \hat{\vec{F^l_{ij}}} < 0 
+\end{cases}
+$$
