@@ -17,7 +17,7 @@ Paper:
 
 * [Image Style Transfer](https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf){:target="_blank"}
 
-### Texture Synthesis
+### Texture Synthesis - Correlation between feature maps
 
 Consider we have a texture image and want to synthesis a different image with the same texture. In other words, we want an image with different *content* BUT the same *texture*.
 
@@ -81,3 +81,24 @@ $$
 
 A set of **Gram matrices** $$\{ G^1, \dots, G^L\}$$ are produced for $$L$$ layers $$\{ 1, \dots, L\}$$.
 
+### Texture Synthesis - Generating new image with same texture
+
+After quantifying *texture* with the correlation between feature maps $$F^l_i$$ in layer $$l$$ by **Gram matrix**, we are going to generate new iamges with same texture.
+
+![texture_synth](\assets\img\texture_synthesis.png "texture synthesis")
+
+The approach is as follows,
+
+* We initialize a new image $$\hat{\vec{x}}$$ with noise.
+
+* We feed it to the same *CNN* as above.
+
+* We calculate a set of **Gram matrices** $$\{ \hat{G}^1, \dots, \hat{G}^L\}$$ for $$L$$ layers $$\{ 1, \dots, L\}$$ from feature maps $$\hat{F}^l$$ as above.
+
+* We compare the difference between 
+
+	* the **Gram matrices** $$\{ G^1, \dots, G^L\}$$ for real texture image $$\vec{x}$$
+
+	* and the **Gram matrices** $$\{ \hat{G}^1, \dots, \hat{G}^L\}$$ for generated image $$\hat{\vec{x}}$$
+
+* We do **gradient descent** to minimize the difference (match the *texture* of the generated image $$\hat{\vec{x}}$$ to the real texture image$$\vec{x}$$)
