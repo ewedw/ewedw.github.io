@@ -112,7 +112,7 @@ Recall a few notation
 * $$\vec{x}$$: the original texture image
 
 * $$\hat{\vec{x}}$$: the generated image  
-(We add $$\hat{\,}$ for the following if it is related to $$\hat{\vec{x}}$$)
+(We add $$\hat{\,}$$ for the following if it is related to $$\hat{\vec{x}}$$)
 
 * $$\vec{F^l}$$: the vectroized feature maps matrix for layer $$l$$ with shape $$N_l \times H_l  W_l$$
 
@@ -137,10 +137,10 @@ where $$w_l$$ is the weighting factors of the contribution of each layer $$l$$ t
 ### Gradient
 
 $$
-\frac{\partial E_l}{\partial \hat{\vec{F^l_{ik}}} } = 
+\frac{\partial E_l}{\partial \hat{\vec{F^l_{i}}} } = 
 \begin{cases} 
-\frac{1}{N_l^2 (H_l W_l)^2} \left( (\hat{\vec{F^l}})^T \left( G^l_{ij} - \hat{G^l_{ij}} \right) \right) & \text{if } \hat{\vec{F^l_{ik}}} > 0  \\ 
-0 & \text{if } \hat{\vec{F^l_{ik}}} < 0 
+\frac{1}{N_l^2 (H_l W_l)^2} \left( (\hat{\vec{F^l_j}})^T \left( G^l_{ij} - \hat{G^l_{ij}} \right) \right) & \text{if } \hat{\vec{F^l_{i}}} > 0  \\ 
+0 & \text{if } \hat{\vec{F^l_{i}}} < 0 
 \end{cases}
 $$
 
