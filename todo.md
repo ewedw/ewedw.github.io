@@ -6,7 +6,7 @@ permalink: /todo/
 
 ## Study
 
-* Linear Algebra {% include focus.html %} 
+* Linear Algebra
 
 * PGM / CS228 {% include focus.html %}  
 (Sampling / Inference / Learning...) 
@@ -23,6 +23,8 @@ permalink: /todo/
 ## Possible direction with attacks
 
 * Style transfer {% include focus.html %}
+
+* Style transfer + Diffusion {% include focus.html %}
 
 * Style distribution (Multvariate Gaussian with Gram matrix) {% include focus.html %}
 
