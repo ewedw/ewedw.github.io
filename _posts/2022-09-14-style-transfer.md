@@ -147,3 +147,15 @@ $$
 where $$k$$ denotes the $$k$$-th element in the vectorized feature map $$\hat{\vec{F^l_i}}$$
 
 $$\frac{\partial \mathcal{L}}{\partial \hat{\vec{x}}}$$ can be computed using [**back-propagation**](https://youtu.be/tIeHLnjs5U8){:target="_blank"}. 
+
+### Results
+
+Image from the [paper](https://arxiv.org/abs/1505.07376){:target="_blank"}.
+
+![results](\assets\img\texture_synthesis_results.png "Results")
+
+The labels "conv1_1", "pool1", "pool2", "pool3", "pool4" describe the layers included up to in the calculation of $$\mathcal{L}(\vec{x}, \hat{\vec{x}})$$.
+
+* The higher (deeper) the layers are up to, the better the quality of the generated image $$\hat{\vec{x}}$$
+
+* A lot of paraemeters are needed
