@@ -33,7 +33,7 @@ permalink: /todo/
 
 See [RoadMap](\assets\pdf\roadmap.pdf){:target="_blank"}
 
-### Neural Style Transfer
+#### Neural Style Transfer
 
 * Texture Synthesis  
 (Non-parametric / Gram matrix...)
@@ -46,7 +46,7 @@ See [RoadMap](\assets\pdf\roadmap.pdf){:target="_blank"}
 
 * Speed Improvement
 
-### Other Perceptual Loss
+#### Other Perceptual Loss
 
 * Super-Resolution
 
@@ -58,7 +58,7 @@ See [RoadMap](\assets\pdf\roadmap.pdf){:target="_blank"}
 
 * Sketch inversion
 
-### Potential direction
+#### Potential direction
 
 * Style transfer + Diffusion generative model
 
