@@ -6,21 +6,15 @@ permalink: /todo/
 
 #TODO
 
-## Basic 
-
-* Linear Algebra
-
-* CS229  
-(Stat foundation...)
-
-* CS231n   
-(Style Transfer / Self-supervised / Attention / Video...) 
-
-
 ## Deep Generative Model
 
-* PGM / CS228   
-(Sampling / Inference / Learning...) 
+* PGM / CS228  
+
+	* Inference
+
+	* Sampling {% include span.html content="[Focus]" %}
+
+	* Learning
 
 * CS236    
 
@@ -31,41 +25,53 @@ permalink: /todo/
 	* Score / Diffusion {% include span.html content="[Focus]" %}
 
 
-## Neural Style Transfer & Perceptual Loss {% include span.html content="[Focus]" %}
+## Neural Style Transfer & Perceptual Loss 
 
 See [RoadMap](\assets\pdf\roadmap.pdf){:target="_blank"}
 
-#### Neural Style Transfer
+* Neural Style Transfer {% include span.html content="[Focus]" %}
 
-* Texture Synthesis  
-(Non-parametric / Gram matrix...)
+	* Texture Synthesis  
+	(Non-parametric / Gram matrix...)
 
-* Style Transfer
+	* Style Transfer
 
-* Output Quality Improvement
+	* Output Quality Improvement
 
-* Algorithm Improvement
+	* Algorithm Improvement
 
-* Speed Improvement
+	* Speed Improvement
 
-#### Other Perceptual Loss
+* Other Perceptual Loss {% include span.html content="[Focus]" %}
 
-* Super-Resolution
+	* Super-Resolution
 
-* Inpainting
+	* Inpainting
 
-* Attribute manipulation
+	* Attribute manipulation
 
-* Attribute-based Synthesis
+	* Attribute-based Synthesis
 
-* Sketch inversion
+	* Sketch inversion
 
-#### Potential direction
+* Potential direction
 
-* Style transfer + Diffusion generative model
+	* Style transfer + Diffusion generative model
 
-* Learning style distribution  
-(Multvariate Gaussian with Gram matrix + Diffusion) 
+	* Learning style distribution  
+	(Multvariate Gaussian with Gram matrix + Diffusion) 
+
+<hr>
+
+## Basic 
+
+* Linear Algebra
+
+* CS229  
+(Stat foundation...)
+
+* CS231n   
+(Style Transfer / Self-supervised / Attention / Video...) 
 
 
 ## Self-Supervised Learning
