@@ -74,6 +74,11 @@ See [RoadMap](\assets\pdf\roadmap.pdf){:target="_blank"}
 (Style Transfer / Self-supervised / Attention / Video...) 
 
 
+## Architecture
+
+* Spatial Pyramid Matching
+
+
 ## Self-Supervised Learning
 
 * Grayscale to Color (Self-supervised)
