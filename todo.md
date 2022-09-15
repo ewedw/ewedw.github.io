@@ -23,6 +23,8 @@ permalink: /todo/
 
 ## Neural Style Transfer & Perceptual Loss {% include span.html content="[Focus]" %}
 
+See [RoadMap](\assets\pdf\roadmap.pdf){:target="_blank"}
+
 ### Neural Style Transfer
 
 * Texture Synthesis  
