@@ -20,34 +20,76 @@ permalink: /todo/
 * CS229  
 (Stat foundation...)
 
-## Possible direction with attacks
 
-* Style transfer {% include span.html content="[Focus]" %}  
-(Concept / Advanement / Videos...) 
+## Neural Style Transfer & Perceptual Loss {% include span.html content="[Focus]" %}
 
-* Style transfer + Diffusion {% include span.html content="[Focus]" %} 
+### Neural Style Transfer
 
-* Learning style distribution {% include span.html content="[Focus]" %}  
-(Multvariate Gaussian with Gram matrix + Diffusion)  
+* Texture Synthesis  
+(Non-parametric / Gram matrix...)
+
+* Style Transfer
+
+* Output Quality Improvement
+
+* Algorithm Improvement
+
+* Speed Improvement
+
+### Other Perceptual Loss
+
+* Super-Resolution
+
+* Inpainting
+
+* Attribute manipulation
+
+* Attribute-based Synthesis
+
+* Sketch inversion
+
+### Potential direction
+
+* Style transfer + Diffusion generative model
+
+* Learning style distribution  
+(Multvariate Gaussian with Gram matrix + Diffusion) 
+
+
+## Generative Model
+
+* VAE
+
+* Energy-based
+
+* Score-based / Diffusion {% include span.html content="[Focus]" %} 
+
+
+## Self-Supervised Learning
 
 * Grayscale to Color (Self-supervised)
 
 * Sketch to Grayscale
 
-* Generative Model (Diffusion-based) {% include span.html content="[Focus]" %} 
+
+## NeRF
 
 * Nerf
 
 * Image to animation...inbetweening (NeRF)
 
+* Nerf + Style Transfer
+
+
+## Possible direction with attacks
+
 * Image to animation...generative + style
 
 * Video segmentation (Layered Neural Atlases + Inpainting)
 
-* Nerf + Style Transfer
 
 ## Further direction
 
 * Image to 3D function
 
-* Function mapping animation
+* Function mapping animation 
