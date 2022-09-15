@@ -4,21 +4,29 @@ title: Todo
 permalink: /todo/
 ---
 
-## Study
+## Basic 
 
 * Linear Algebra
 
-* PGM / CS228 {% include span.html content="[Focus]" %}  
-(Sampling / Inference / Learning...) 
-
-* CS231n {% include span.html content="[Focus]" %}  
-(Style Transfer / Self-supervised / Attention / Video...) 
-
-* CS236 {% include span.html content="[Focus]" %}   
-(VAE / Energy / Score / Diffusion...)
-
 * CS229  
 (Stat foundation...)
+
+* CS231n   
+(Style Transfer / Self-supervised / Attention / Video...) 
+
+
+## Deep Generative Model
+
+* PGM / CS228   
+(Sampling / Inference / Learning...) 
+
+* CS236    
+
+	* VAE 
+
+	* Energy 
+
+	* Score / Diffusion {% include span.html content="[Focus]" %}
 
 
 ## Neural Style Transfer & Perceptual Loss {% include span.html content="[Focus]" %}
@@ -56,15 +64,6 @@ See [RoadMap](\assets\pdf\roadmap.pdf){:target="_blank"}
 
 * Learning style distribution  
 (Multvariate Gaussian with Gram matrix + Diffusion) 
-
-
-## Generative Model
-
-* VAE
-
-* Energy-based
-
-* Score-based / Diffusion {% include span.html content="[Focus]" %} 
 
 
 ## Self-Supervised Learning
