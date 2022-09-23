@@ -8,7 +8,7 @@ permalink: /todo/
 
 ## Projects
 
-* Animation Inbetweening
+* Animation Inbetweening (attention?)
 
 * Animation Colorization (Input: x + style)
 
