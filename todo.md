@@ -6,6 +6,12 @@ permalink: /todo/
 
 #TODO
 
+## Projects
+
+* Animation Inbetweening
+
+* Animation Colorization (Input: x + style)
+
 ## Deep Generative Model
 
 * PGM / CS228  
