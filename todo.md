@@ -14,7 +14,7 @@ permalink: /todo/
 
 ## Deep Generative Model
 
-* [Dream-Booth Diffusion](https://dreambooth.github.io/){:target="_blank"}
+* [Dream-Booth Diffusion](https://dreambooth.github.io/){:target="_blank"} {% include span.html content="[Focus]" %}
 
 * PGM / CS228  
 
