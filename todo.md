@@ -14,6 +14,8 @@ permalink: /todo/
 
 ## Deep Generative Model
 
+* [Dream-Booth Diffusion](https://dreambooth.github.io/){:target="_blank"}
+
 * PGM / CS228  
 
 	* Inference
