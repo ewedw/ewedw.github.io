@@ -122,15 +122,10 @@ $$
 
 Calculating $$\nabla_\theta\, f_\theta(x)$$ is relatively easy.
 
-But calculating the *expected value* $$\mathbb{E}_{P_\theta(x)} [\nabla_\theta\, f_\theta(x)]$$ is almost impossible, as it contains the computation of $$P_\theta(x)$$ and thus the *intractable* $$Z(\theta)$$. So we may first consider estimating it with sampling.
+But calculating the *expected value* $$\mathbb{E}_{P_\theta(x)} [\nabla_\theta\, f_\theta(x)]$$ is almost impossible, as it contains the computation of $$P_\theta(x)$$ and thus the *intractable* $$Z(\theta)$$. So we may first consider estimating it with sampling,
 
 $$
-\begin{align*}
-\nabla_\theta \ln P_\theta(x) 
-&= \nabla_\theta\, f_\theta(x) - \nabla_\theta \, \ln Z(\theta) \\
-&= \nabla_\theta\, f_\theta(x) - \mathbb{E}_{P_\theta(x)} [\nabla_\theta\, f_\theta(x)] \\
-&= \nabla_\theta\, f_\theta(x_{train}) - \nabla_\theta\, f_\theta(x_{sample})
-\end{align*}
+\nabla_\theta \ln P_\theta(x) \approx \nabla_\theta\, f_\theta(x_{train}) - \nabla_\theta\, f_\theta(x_{sample})
 $$
 
 We call this the **Contrastive Divergence**.
