@@ -2,7 +2,7 @@
 layout: post
 title:  Energy-based Model
 date: 2022-08-20 23:00:00 +0800
-permalink: /post/ebm/
+permalink: /post/energymodel/
 
 working: true
 ---
@@ -74,7 +74,11 @@ Cons:
 
 * Curse of dimensionality: Calculating $$P_\theta(x)$$ is hard since $$Z(\theta)$$ is *intractable*
 
-If we can find a way to work around with $$Z(\theta)$$, this **energy-based model** can be very useful.
+* Sampling is hard: Since $$Z(\theta)$$ is *intractable*
+
+* Learning is hard: **Maximum Likelihood Estimation (MLE)** is hard
+
+If we can find a way to work around with $$Z(\theta)$$, maybe through sampling or simply bypassing it, this **energy-based model** can be very useful.
 
 ### Evaluating ratios between two variables
 
@@ -87,9 +91,11 @@ $$
 = e^{\,f_\theta(x_1) - f_\theta(x_2)}
 $$
 
-### Gradient of log-likelihood
+This is very useful in MCMC. As we will be calculating the **acceptance probability** (explained below)
 
-To maximize the *log-likelihood* of $$P_\theta(x)$$, we need to compute its *gradient*. Let's simplify the *log-likelihood* first, 
+### Contrastive Divergence
+
+In many cases, we want to learn by **Maximum Likelihood Estimation (MLE)**. Here we do the same. To maximize the *log-likelihood* of $$P_\theta(x)$$, we need to compute its *gradient*. Let's simplify the *log-likelihood* first, 
 
 $$
 \begin{align*}
@@ -116,8 +122,19 @@ $$
 
 Calculating $$\nabla_\theta\, f_\theta(x)$$ is relatively easy.
 
-But calculating the *expected value* $$\mathbb{E}_{P_\theta(x)} [\nabla_\theta\, f_\theta(x)]$$ is almost impossible, as it contains the computation of $$P_\theta(x)$$ and thus the *intractable* $$Z(\theta)$$.
+But calculating the *expected value* $$\mathbb{E}_{P_\theta(x)} [\nabla_\theta\, f_\theta(x)]$$ is almost impossible, as it contains the computation of $$P_\theta(x)$$ and thus the *intractable* $$Z(\theta)$$. So we may first consider estimating it with sampling.
 
-### Sampling with Langevin MCMC
+$$
+\begin{align*}
+\nabla_\theta \ln P_\theta(x) 
+&= \nabla_\theta\, f_\theta(x) - \nabla_\theta \, \ln Z(\theta) \\
+&= \nabla_\theta\, f_\theta(x) - \mathbb{E}_{P_\theta(x)} [\nabla_\theta\, f_\theta(x)] \\
+&= \nabla_\theta\, f_\theta(x_{train}) - \nabla_\theta\, f_\theta(x_{sample})
+\end{align*}
+$$
 
-We can use a sampling method called **Markov Chain Monte Carlo (MCMC)** to approximate $$P_\theta(x)$$.
+We call this the **Contrastive Divergence**.
+
+### Sampling with MCMC
+
+Now we have a formula for estimating the *maximium log-likelihood*, but it requires us to do sampling. How do we do sampling? We can use a sampling method called **Markov Chain Monte Carlo (MCMC)** to approximate $$P_\theta(x)$$.
