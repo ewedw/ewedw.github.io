@@ -12,14 +12,11 @@ Read [posts](post.md).
 
 I am interested in 
 
-* math 
+* math (analysis / probability theory / combinatorics)
 
-* statistics 
-
-* data science 
+* statistics (statistical inference / statistical learning)
 
 * machine learning 
+(unsupervised learning / representation learning / deep learning / graphical models / generative models)
 
-* deep learning
-
-* music
+* music (soul / neo-soul / jazzFusion / pop / future bass / EDM)
