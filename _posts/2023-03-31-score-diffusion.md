@@ -9,5 +9,5 @@ working: true
 
 ### Diffusion and Score-based Models
 
-<embed src="/assets/pdf/diffusion.pdf" type="application/pdf">
+<embed src="/assets/pdf/diffusion.pdf" width="840px" height="1024px" type="application/pdf">
 
