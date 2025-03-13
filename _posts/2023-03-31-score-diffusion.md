@@ -9,6 +9,6 @@ working: true
 
 ### Diffusion and Score-based Models
 
-Please click [**here**](\asset\pdf\diffusion.pdf){:target="_blank"} to view the pdf.
+Please click [**here**](\assets\pdf\diffusion.pdf){:target="_blank"} to view the pdf.
 
 
