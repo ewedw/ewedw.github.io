@@ -1,0 +1,1 @@
+git checkout --orphan latest_branch && git add --all && git commit -m "Page" && git branch -D main && git branch -m main && git push -f origin main
