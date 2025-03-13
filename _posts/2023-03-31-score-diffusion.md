@@ -9,5 +9,6 @@ working: true
 
 ### Diffusion and Score-based Models
 
-<embed src="/assets/pdf/diffusion.pdf" width="840px" height="1024px" type="application/pdf">
+Please click [**here**](\asset\pdf\diffusion.pdf){:target="_blank"} to view the pdf.
+
 
