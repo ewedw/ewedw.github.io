@@ -4,6 +4,7 @@ title:  Gaussian Distribution PDF
 date: 2022-08-21 03:00:00 +0800
 permalink: /post/gaussian/
 
+hide: True
 ---
 
 # Gaussian Distribution PDF
