@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Latent Variable Model with VAE
-date: 2022-08-26 13:00:00 +0800
+date: 2022-09-26 13:00:00 +0800
 permalink: /post/latent/
 
 working: true
