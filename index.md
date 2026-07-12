@@ -3,11 +3,15 @@ layout: default
 title: Edwin
 ---
 
-Hi.
+Hi. 
 
-Read [posts](post.md).
+My email: <a href="mailto:{{ site.email }}">edwinwoo@connect.hku.hk</a>.
+
+Read [old posts on machine learning](post.md).
 
 
 ## About me
 
-I am interested in math / probability & statistics / machine learning / music.
+I am studing math.
+
+I am interested in algebraic combinatorics (in particulat combinatorics of polytopes) & complex analysis.
