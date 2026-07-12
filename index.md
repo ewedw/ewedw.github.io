@@ -13,5 +13,4 @@ Read [old posts on machine learning](post.md).
 ## About me
 
 I am studing math.
-
-I am interested in algebraic combinatorics (in particulat combinatorics of polytopes) & complex analysis.
+I am interested in algebraic combinatorics (in particular combinatorics of polytopes) & complex analysis.
